@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحويل النص إلى فيديو وصوت</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تحويل النص إلى فيديو وصوت</h1>
+
+        <!-- حقل إدخال النص -->
+        <textarea id="textInput" rows="6" placeholder="أدخل النص هنا..." required></textarea>
+
+        <!-- الأزرار لتوليد الصوت والفيديو -->
+        <div class="buttons">
+            <button id="generateButton">توليد الصوت والفيديو</button>
+        </div>
+
+        <!-- منطقة عرض الصوت والفيديو المولد -->
+        <div class="output">
+            <h2>الفيديو الناتج:</h2>
+            <video id="videoOutput" controls></video>
+            <h2>الصوت الناتج:</h2>
+            <audio id="audioOutput" controls></audio>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
